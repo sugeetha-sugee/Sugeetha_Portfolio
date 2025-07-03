@@ -45,6 +45,8 @@ html, body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  font-weight: bold;
+  font-size: large;
 }
 
 .nav-links li a {
@@ -244,7 +246,7 @@ html, body {
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
-  color: #d4d4d4;
+  color: #fff;
 }
 
 .about-details p {
@@ -415,7 +417,7 @@ html, body {
 .project-card p {
   font-size: 0.95rem;
   margin-bottom: 1rem;
-  color: #d1d5db;
+  color: #fff;
 }
 
 .tech-stack {
@@ -461,7 +463,20 @@ html, body {
 }
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .project-links {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .project-links .btn3 {
+    width: 60%; 
+    text-align: center;
+  }
 }
 
 .project-links .btn3 {
@@ -571,6 +586,8 @@ html, body {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 3rem;
   border-radius: 12px;
+  margin: 0 auto;
+  max-width: 75%;
   width: 320px;
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
 }
@@ -602,6 +619,7 @@ html, body {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .contact-card {
